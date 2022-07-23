@@ -1,0 +1,148 @@
+.intro {
+max-width: 1017px;
+height: 516px;
+margin-bottom: 91px;
+margin: 0 auto;
+}
+
+.intro-title {
+margin-bottom: 40px;
+width: 1017px;
+font-family: 'Inter', "sans-serif";
+font-style: normal;
+font-weight: 900;
+font-size: 54px;
+line-height: 58px;
+color: #FFFFFF;
+margin: 0 auto;
+text-align: center;
+}
+
+.intro-content {
+width: 722px;
+font-family: 'Inter', "sans-serif";
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+color: #FFFFFF;
+}
+
+.intro-author {
+width: 720px;
+height: 34px;
+margin-bottom: 0;
+position: relative;
+top: -58px;
+left: 0;
+font-family: 'Inter', "sans-serif";
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+text-align: right;
+color: #FFFFFF;
+}
+
+.intro-paragraph {
+width: 720px;
+margin-top: -32px;
+font-family: 'Inter', "sans-serif";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 163%;
+color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 95%;
+       height: 68vh;
+       margin: 0 auto;
+       margin-bottom: 64px;
+    }
+    
+    .intro-title {
+    width: 100%;
+    height: 27vh;
+    text-align: left;
+    margin: 0 auto;
+    }
+
+    .intro-content {
+        width: 100%;
+        height: 15vh;
+        margin-top: 15px;
+    }
+
+    .intro-author {
+    width: 680px;
+    margin-top: 0;
+    height: 4vh;
+    margin-left: 45px;
+}
+
+    .intro-paragraph {
+        width: 100%;
+       height: 21vh;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .intro {
+        width: 100%;
+        height: 146vh;
+       margin-top: 40px;
+       margin-bottom: 20px;
+       display: grid;
+       grid-template:
+                    "intro-title"
+                     "intro-content"
+                     "intro-author"
+                     "intro-paragraph";
+    }
+
+    .intro-title {
+    max-width: 44%;
+    min-width: 44%;
+    height: 25vh;
+    font-size: 10vw;
+    line-height: 5vh;
+    margin-left: 13px;
+    margin-bottom: 0;
+    }
+
+    .intro-content {
+    max-width: 44%;
+    min-width: 44%;
+    height: 45vh;
+    font-size: 8vw;
+    line-height: 4vh;
+    margin-bottom: 0;
+    margin: 0 auto;
+    margin-left: 13px;
+    margin-top: 9px;
+    }
+
+    .intro-author {
+    max-width: 44%;
+    min-width: 44%;
+    height: 6vh;
+    font-size: 8vw;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 60px;
+    }
+
+    .intro-paragraph {
+    max-width: 42%;
+    min-width: 42%;
+    height: 63vh;
+    font-size: 5.4vw;
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-left: 13px;
+    margin-top: -80px;
+    }
+}

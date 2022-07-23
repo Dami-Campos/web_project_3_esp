@@ -1,0 +1,156 @@
+.cover {
+width: 100%;
+height: 740px;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 0 auto;
+}
+
+.cover:hover {
+opacity: 0.1;
+}
+
+.cover-image {
+ width: 100%;
+height: 100%;
+position: absolute;
+z-index: 2;
+opacity: 0.6;
+}
+
+.cover-title {
+position: relative;
+z-index: 3;
+width: 656px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 76px;
+text-align: center;
+color: #FFFDFD;
+margin-bottom: 34px;
+}
+
+.cover-subtitle {
+position: relative;
+z-index: 3;
+ width:250px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.cover-button{
+padding: 13px 20px;
+gap: 10px;
+width: 198px;
+height: 48px;
+background: #0278FE;
+border-radius: 4px;
+position: relative;
+z-index: 3;
+margin-top: 45px;
+display: flex;
+align-items: center;
+}
+.cover-button:hover { 
+background: #0063D2; 
+}
+
+.cover__button-text {
+width: 158px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+text-decoration: none;
+text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.cover {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-title {
+margin-top: 0;
+}
+
+.cover-subtitle {
+margin-bottom: 20px;
+}
+
+.cover-button {
+    margin-top: 12px;
+}
+}
+
+@media screen and (max-width: 320px) {
+    .cover {
+    width: 100%;
+    height: 35vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    }
+
+    .cover-image {
+    max-width: 99.5%;
+    min-width: 99.5%;
+    }
+    
+    .cover-title {
+    max-width: 90%;
+    min-width: 90%;
+    font-size: 10vw;
+    line-height: 8vh;
+    margin-top: 46px;
+    margin-bottom: 16px;
+    height: 6vh;
+    }
+    
+    .cover-subtitle {
+        width: 70%;
+        width: 70%;
+        height: 6vh;
+        font-size: 5vw;
+        line-height: 2vh;
+        margin-top: 0;
+    }
+    
+    .cover-button {
+        max-width: 70%;
+        min-width: 70%;
+        max-height: 6vh;
+        min-height: 6vh;
+        margin-top: 0;
+    }
+
+    .cover__button-text {
+     width: 120%;
+     font-size: 5vw;
+     margin: 0 auto;
+    }
+    }

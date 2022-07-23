@@ -1,0 +1,48 @@
+.header {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    }
+    
+    .header-logo {
+    width: 25%;
+    height: 20%;
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .header {
+            width: 90%;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            }
+            .header-logo {
+            width: 35vw;
+            height: 8vh;
+            }
+    }
+    @media screen and (max-width: 320px) {
+        .header {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+       padding-top: 0;
+        }
+        .header-logo {
+        max-width: 70%;
+        min-width: 70%;
+        height: 7vh;
+        }
+    } 
+    
