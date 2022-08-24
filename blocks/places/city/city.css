@@ -1,40 +1,47 @@
 .places__city-content {
+    max-width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     position: relative;
-    margin-top: 51px;
     }
     
     .places__city-title {
-    width: 460px;
-    height: 152px;
-    margin-top: 154px;
+    max-width: 360px;
+    margin-top: 0;
     font-family: 'Inter', "sans-serif";
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
-    color: #FFFFFF;
+    color: white;
     }
     
     .places__city-website {
-    max-width: 58px;
-    margin-top: 230px;
+    max-width: 90%;
+    margin-top: 100px;
     margin-left: 40px;
-    font-family: 'Inter', "sans-serif";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
     color: #AAAAAA;
+    display: flex;
+    flex-direction: column;
     }
     
     .places__city-artist {
-    width: 500px;
-    margin-top: 8px;
+        max-width: 90%;
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-family: 'Inter', "sans-serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+    
+    .places__city-author {
+    max-width: 100%;
+    margin-top: 0;
     font-family: 'Inter', "sans-serif";
     font-style: normal;
     font-weight: 400;
@@ -45,30 +52,29 @@
     }
     
     .places__city-image {
-        width: 460px;
+        max-width: 460px;
         height: 460px;
         margin-bottom: 48px;
         background-color: #C4C4C4;
+        display: flex;
+        align-items: center;
         }
 
         .places__image-paragraph {
-        width: 319px;
-        height: 29px;
-        margin: 0 auto;
-        margin-top: 219px;
-        font-family: 'Inter', "sans-serif";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 163%;
-        color: #000000;
-        }
+            max-width: 319px;
+            height: 29px;
+            margin: 0 auto;
+            font-family: 'Inter', "sans-serif";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 163%;
+            color: #000000;
+            }
     
     .places__city-paragraph {
-    max-width: 484px;
-    height: 460px;
-    margin-left: 40px;
-    margin-top: -10px;
+    max-width: 100%;
+    margin-left: 43px;
     font-family: 'Inter', "sans-serif";
     font-style: normal;
     font-weight: 400;
@@ -77,17 +83,24 @@
     color: #FFFFFF;
     }
     
-    .places-button {
-        padding: 13px 20px;
+    .places__city-button {
         gap: 10px;
-        width: 355px;
+       max-width: 355px;
+       height: 48px;
         background-color: #0278FE;
+        border-style: none;
         border-radius: 4px;
-        margin-bottom: 80px;
+       margin-bottom: 20px;
+       display: flex;
+       align-items: center;
+    }
+    
+    .places__city-button:hover {
+    background-color:  #0063D2;
     }
     
     .places__button-text {
-        width: 315px;
+        max-width: 315px;
         margin: 0 auto;
         text-align: center;
         font-family: 'Inter';
@@ -96,144 +109,167 @@
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
+        text-decoration: none;
     }
     
     @media screen and (max-width: 768px) {
         .places__city-content {  
-         width: 95%;
-         height: 65vh;
-         margin: 0 auto;
-         margin-top: 50px;
-         margin-bottom: 92px;
+         max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
         }
     
+    
         .places__city-title{
-         width: 50vw;
-         height: 10vh;
-         font-size: 5vw;
-         line-height: 5vh;
-         margin-top: 10px;
+        max-width: 85%;
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 46px;
         }
     
         .places__city-website {
-            width: 20vw;
-            height: 4vh;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            font-size: 2vw;
-            }
-        
-        .places__city-artist {
-        width: 44vw;
-        font-size: 2vw;
-        line-height: 2vh;
+        max-width: 100%;
         margin-top: 0;
-        margin-left: 0;
+        margin-bottom: 0;
+        margin-left: 40px;
+        }
+    
+        .places__city-artist {
+        max-width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+         font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        }
+        
+        .places__city-author {
+        max-width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
         }
     
         .places__city-image {
-            width: 46vw;
-            height: 40vh;
-            margin-top: 0;
-            margin-bottom: 70px;
+        max-width: 340px;
+        height: 340px;
         }
 
         .places__image-paragraph {
-            margin-top: 156px;
+            max-width: 319px;
+            height: 29px;
+            margin: 0 auto;
+            font-family: 'Inter', "sans-serif";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 163%;
+            color: #000000;
             }
     
         .places__city-paragraph{
-            width: 46vw;
-            height: 40vh;
-            font-size: 16px;
-            line-height: 163%;
-            margin-left: 0;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 163%;
         }
     
-        .places-button {
-        margin-top: -30px;
+        .places__city-button {
+        max-width: 355px;
+        height: 48px;
         }
     }
-
-
-    @media screen and (max-width: 320px) {
-        .places__city-content {  
-            width: 100%;
-            height: 85vh;
-            margin-bottom: 20px;
-            grid-template:
-                        "places__city-title"
-                         "places__city-website"
-                         "places__city-artist"
-                         "places__city-image"
-                         "places__city-paragraph"
-                         "places-button";
-           }
-       
-           .places__city-title{
-            max-width: 84%;
-            min-width: 84%;
-            height: 5vh;
-            font-size: 10vw;
-            line-height: 5vh;
-            margin-top: 0;
-            margin-left: 8px;
-            margin-bottom: 0;
-            text-align: left;
-           }
-       
-           .places__city-website {
-            max-width: 84%;
-            min-width: 84%;
-            font-size: 4.5vw;
-            margin-top: 0;
-            margin-left: 8px;
-           }
     
-           .places__city-artist {
-            max-width: 95%;
-            min-width: 95%;
-            font-size: 5.5vw;
-            line-height: 2.5vh;
-            margin-left: 0;
-            }
-        
-       
-           .places__city-image {
-            max-width: 87%;
-            min-width: 87%;
-            height: 40vh;
-            margin-top: 50px;
-            margin-bottom: 0;
-           }
-       
-           .places__city-paragraph{
-            max-width: 85%;
-            min-width: 85%;
-             height: 15vh;
-            font-size: 5vw;
-            line-height: 3vh;
-            margin-top: 0;
-            margin-left: 8px;
-            margin-bottom: 20px;
-           }
-
-           .places-button {
-            max-width: 80%;
-            min-width: 80%;
-            height: 6vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 0;
-            margin-top: -40px;
-            margin-left: 12px;
-            }
+           @media screen and (max-width: 320px) {
+            .places__city-content {  
+                max-width: 100%;
+                margin-bottom: 20px;
+                margin-left: 0;
+                display: grid;
+                grid-template:
+                            "places__city-title"
+                             "places__city-author"
+                             "places__city-artist"
+                             "places__city-image"
+                             "places__city-paragraph"
+                             "places__city-button";
+               }
            
-            .places__button-text {
-                max-width: 105%;
-                min-width: 105%;
-                font-size: 4.6vw;
-           }
-}
+               
+               .places__city-title{
+                max-width: 100%;
+                margin-left: 0;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 35px;
+                text-align: left;
+               }
+           
+               .places__city-website {
+                max-width: 100%;
+                margin: 0 auto;
+                margin-left: 8px;
+               }
+        
+               .places__city-artist {
+                max-width: 100%;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                }
+    
+                .places__city-author {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                }
+            
+           
+               .places__city-image {
+                max-width: 320px;
+                min-width: 320px;
+                height: 320px;
+               }
+
+               .places__image-paragraph {
+                max-width: 100%;
+                height: 29px;
+                margin-left: 0;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                }
+           
+               .places__city-paragraph{
+                max-width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 163%;
+                margin: 0 auto;
+                margin-left: 8px;
+               }
+        
+               .places__city-button {
+                max-width: 288px;
+                height: 48px;
+                margin-top: 8px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+               
+                .places__button-text {
+                    max-width: 100%;
+                    min-width: 100%;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px; 
+               }
+        }
